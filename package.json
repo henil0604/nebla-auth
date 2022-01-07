@@ -1,0 +1,38 @@
+{
+  "name": "hapi-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for creating hapijs API",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ."
+  },
+  "keywords": [
+    "hapi",
+    "hapijs",
+    "boilerplate"
+  ],
+  "author": "Henil Malaviya",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@hapi/hapi": "^20.2.1",
+    "@helper-modules/env": "^1.0.3",
+    "@helper-modules/log": "^1.0.0",
+    "@helper-modules/random": "^1.0.0",
+    "@helper-modules/sleep": "^1.0.0",
+    "app-root-path": "^3.0.0",
+    "axios": "^0.24.0",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.27.0",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.3",
+    "nodemailer": "^6.7.2",
+    "proper-url-join": "^2.1.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
