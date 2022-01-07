@@ -111,7 +111,10 @@ class User {
     static GenerateAvatarLink(id) {
         const seed = hashIt(id);
         let url = `https://avatars.dicebear.com/api/identicon/${seed}.png`
-        return url;
+        return {
+            url,
+            seed
+        };
     }
 
 }

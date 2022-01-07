@@ -14,10 +14,10 @@ module.exports = class Avatar extends Route {
 
             await Authenticator(request, h);
 
-            let avatarUrl = User.GenerateAvatarLink(request.UserData.id);
+            let { url, seed } = User.GenerateAvatarLink(request.UserData.id);
 
             const response = await axios({
-                url: avatarUrl,
+                url,
                 responseType: 'arraybuffer' // important
             });
 
